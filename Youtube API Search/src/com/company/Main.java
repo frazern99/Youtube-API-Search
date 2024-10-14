@@ -51,7 +51,7 @@ public class Main {
         String url=JOptionPane.showInputDialog(null, "Enter Video ID");
 
         String videoURL= new String();
-        videoURL="https://www.googleapis.com/youtube/v3/videos?id="+ url +"&key=AIzaSyAAsKTFx80cn12xpWpnVPHXWcC6wKEvGmo&part=snippet,contentDetails,statistics,status";
+        videoURL="https://www.googleapis.com/youtube/v3/videos?id="+ url +"&key=YOUR API KEY HERE=snippet,contentDetails,statistics,status";
         URL myUrl= new URL(videoURL) ;
         URLConnection myUrlConnection = myUrl.openConnection();
         java.io.InputStream myInputStream = myUrlConnection.getInputStream();
